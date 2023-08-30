@@ -9,30 +9,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PH1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="home">
+    
 
         <div class="kotak">
            <h2>selamat datang</h2>
            <p>Silahkan masukan akun anda</p>
-           <form action="#" class="format">
+           
+           <form action="#" >
+            <div class="format">
             <label >username</label>
-            <input type="text" name="namaku"id="namaku" placeholder="masukan username kamu">
+            <input type="text" name="namaku" id="namaku" placeholder="masukan username kamu">
+        </div>
+        <div class="format">
             <label>password</label>
-            <input type="password" name="passwordku" id="passwordku"placeholder="masukan password kamu">
+            <input type="password" name="passwordku" id="pwku" placeholder="masukan password kamu">
+        </div>
             <button type="submit" onclick="btnsubmit()">login</button>
 
            </form>
         </div>
        
-    </section>
+    
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-        const btnsubmit=()=>{
-          var namasaya =document.getElementById("namaku").value
-          alert(`selamat Datang,$(namaku)`)
-          var password=document
+
+        const btnsubmit = () =>{
+          var namasaya = document.getElementById("namaku").value
+          var pw = document.getElementById("pwku").value
+          alert(`selamat Datang,${namasaya} \npassword,${pw}`)
         }
         
         

@@ -1,49 +1,84 @@
-*{
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & tampilan=tukar');
+body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(130deg,#1171b6 , #9e1b82);
+    opacity: 100;
 }
-#home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: green;
-   
-}
-.kotak{
-    padding: 120px;
-    display: flex;
-    border: radius 40px; 
 
-    flex-direction: column;
+
+.kotak{
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px; 
+    stroke-width: 100%;
     display: inline-block;
     background-color: #fff;
 }
-.kotak p,h2{
+.kotak h2{
     text-align: center;
     font-weight: 500;
-    
+   
+}
 
+.kotak p{
+    
+    text-align: center;
 }
 .format{
     background: transparent;
     border: none;
-    display: flex;
-    
-    padding: 60px 50px ;
-    width: 700px;
+    display: flex;  
+     margin-left: 50px;
     flex-direction: column;
-}
-.kotak p{
-    font-family: 'Poppins', sans-serif;
-}
-.format button{
-    background: #fff;
-}
-.format button:hover{
-    background: gray;
+    width: 500px;
+    margin-top: 10px;
 }
 
+.format input{
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-left: 2px;  
+  
+}
+
+.format label{
+    padding: 2px 0px;
+}
+
+button{
+    width: 90%;
+    padding: 8px;
+    margin-left: 30px;
+    border-radius: 18px;
+    margin-top: 20px;
+}
+
+.kotak p{
+    font-weight: 500;
+    text-align: center;
+}
+ button{
+    background: #fff;
+    transition: 0.5s;
+    font-weight: 800
+}
+button:hover{
+    background: rgb(70, 150, 255);
+}
+.format form input{
+    width: 100%;
+    height: 32px;
+    border: #000 1px solid;
+    border-radius: 8px;
+    box-shadow: 0.5 0.5 1px inset;
+    outline: none;
+}
